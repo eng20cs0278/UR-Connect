@@ -11,7 +11,7 @@ import { ReactNode } from 'react'
 
 export const metadata: Metadata = {
   title: 'UR-Connect',
-  description: 'A Reddit clone built with Next.js and TypeScript.',
+  description: 'A UR-Connect platform built with Next.js and TypeScript.',
 }
 
 //can import props if confuse, here specificallyimported slug and children
@@ -70,10 +70,10 @@ const Layout = async ({
         <div className='grid grid-cols-1 md:grid-cols-3 gap-y-4 md:gap-x-4 py-6'>
           <ul className='flex flex-col col-span-2 space-y-6'>{children}</ul>
 
-          {/* info sidebar - right side */}
-          <div className='overflow-hidden h-fit rounded-lg border border-gray-300 order-first md:order-last'>
-            <div className='px-6 py-4 bg-zinc-300'>
-              <p className='font-semibold py-3 text-slate-900'>About {community.name}</p>
+          {/* info sidebar */}
+          <div className='overflow-hidden h-fit rounded-lg border border-gray-200 order-first md:order-last'>
+            <div className='px-6 py-4 bg-black'>
+              <p className='font-semibold py-3 text-white'>About {community.name}</p>
             </div>
 
             <dl className='divide-y divide-gray-100 px-6 py-4 text-sm leading-6 bg-white'>

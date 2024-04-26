@@ -2,7 +2,7 @@ import { z } from 'zod'
 
 //zod - validator library - if any object passed, the data in schema is only retrived
 // {name: "rak" ,age: 21} -> schema{name: } -> output{name: "rak"}
-export const communityValidator = z.object({
+export const CommunityValidator = z.object({
   name: z.string().min(3).max(21),
 })
 

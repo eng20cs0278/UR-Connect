@@ -22,7 +22,7 @@ interface PostProps {
 }
 
 //post overview in small size
-const Post: FC<PostProps> = ({
+const Posts: FC<PostProps> = ({
   post,
   votesAmt: _votesAmt,
   currentVote: _currentVote,
@@ -88,4 +88,4 @@ const Post: FC<PostProps> = ({
     </div>
   )
 }
-export default Post
+export default Posts

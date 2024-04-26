@@ -22,8 +22,8 @@ export default function RootLayout({
 }) {
   return (
     //merge both class names, optimize code
-    <html lang='en' className={cn('bg-black text-slate-900 antialiased light', inter.className)}>
-      <body className='min-h-screen pt-12 bg-black antialiased'>
+    <html lang='en' className={cn('bg-yellow1 text-slate-900 antialiased light', inter.className)}>
+      <body className='min-h-screen pt-12 bg-yellow1 antialiased'>
         <Providers >
           {/* @ts-expect-error Server Component */}
           <Navbar />

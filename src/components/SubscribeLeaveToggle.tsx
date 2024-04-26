@@ -42,7 +42,7 @@ const SubscribeLeaveToggle = ({
       }
 
       return toast({
-        title: 'There was a problem.',
+        title: 'There was a problem (Network Glitch).',
         description: 'Something went wrong. Please try again.',
         variant: 'destructive',
       })

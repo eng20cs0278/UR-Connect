@@ -55,7 +55,7 @@ const CommentVotes: FC<CommentVotesProps> = ({
       }
 
       return toast({
-        title: 'Something went wrong.',
+        title: 'You cannot vote twice.',
         description: 'Your vote was not registered. Please try again.',
         variant: 'destructive',
       })

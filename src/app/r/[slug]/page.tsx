@@ -1,8 +1,10 @@
 import MiniCreatePost from '@/components/MiniCreatePost'
 import PostFeed from '@/components/PostFeed'
+import { Button } from '@/components/ui/Button'
 import { INFINITE_SCROLL_PAGINATION_RESULTS } from '@/config'
 import { getAuthSession } from '@/lib/auth'
 import { db } from '@/lib/db'
+import { Video } from 'lucide-react'
 import { notFound } from 'next/navigation'
 
 //slug any name /r/create/any name
@@ -42,9 +44,15 @@ const page = async ({ params }: PageProps) => {
 
   return (
     <>
-      <h1 className='font-bold text-3xl md:text-4xl h-14 text-slate-300'>
-        {community.name}
-      </h1>
+      <span className='flex gap-x-10'>
+        <h1 className='font-bold text-3xl md:text-4xl h-14'>
+          {community.name}
+        </h1>
+        <a href="https://castx.vercel.app/" 
+            target="_blank" rel="noopener noreferrer">
+            Discuss <Video />
+        </a>
+      </span>
       <MiniCreatePost session={session} />
       {/* TODO: Show posts in user feed */}
       <PostFeed initialPosts={community.posts} communityName={community.name} />

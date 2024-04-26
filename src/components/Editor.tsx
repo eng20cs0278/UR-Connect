@@ -54,7 +54,7 @@ export const Editor: React.FC<EditorProps> = ({ communityId }) => {
     },
     onError: () => {
       return toast({
-        title: 'Something went wrong.',
+        title: 'Something went wrong (Network Glitch).',
         description: 'Your post was not published. Please try again.',
         variant: 'destructive',
       })
@@ -140,7 +140,7 @@ export const Editor: React.FC<EditorProps> = ({ communityId }) => {
       for (const [_key, value] of Object.entries(errors)) {
         value
         toast({
-          title: 'Something went wrong.',
+          title: 'Something went wrong (Network Glitch).',
           description: (value as { message: string }).message,
           variant: 'destructive',
         })
