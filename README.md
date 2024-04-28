@@ -1,6 +1,6 @@
 # UR-Connect
 
-![UR-Connect Logo](ur-connect-logo.png)
+![UR-Connect Logo]([ur-connect-logo.png](https://github.com/eng20cs0278/ur-connect/blob/master/public/favicon.ico))
 
 UR-Connect is a revolutionary social media platform designed to address two critical issues prevalent in traditional social media platforms: the distraction caused by mixed content and the untapped potential for fostering collaboration between rural and urban communities. By focusing on personalized content delivery and facilitating meaningful connections between users, UR-Connect aims to enhance productivity, drive innovation, and contribute to the growth of communities and nations.
 
